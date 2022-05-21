@@ -8,7 +8,7 @@
 # docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk <repo-user>/elk
 
 # replace with master-arm64 for ARM64
-ARG IMAGE=focal-1.1.0
+ARG IMAGE=master-arm64
 
 FROM phusion/baseimage:${IMAGE}
 MAINTAINER Sebastien Pujadas http://pujadas.net
@@ -39,7 +39,7 @@ ARG ELK_VERSION=8.1.0
 ARG ELK_BASE_VERSION=8.1.0
 
 # replace with aarch64 for ARM64 systems
-ARG ARCH=x86_64 
+ARG ARCH=aarch64
 
 
 ### install Elasticsearch
